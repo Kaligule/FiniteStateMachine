@@ -293,7 +293,7 @@ bbcode_text = "##################################### README  ###################
 #
 #     update(inDeltaTime): update FSM to update current state. Should be
 #        used in every game tick, but should use it only if you are using 
-#        updateMode=\"Manual\".
+#        updateMode="Manual".
 #
 #    init(): use only if initManually = true. You will be able to pass additional arguments
 #        to your states and transitions
