@@ -38,20 +38,19 @@ extends Node
 #
 #
 ###########
-# * Functions that are intended to be used by users:
+# * Functions that are intended to be called by users:
 #
 #     getStateID(): return name of current state
 #
 #     getState(): return node with current state
 #
 #     changeStateTo(inNewStateID): can be used to change state.
-#        Usually dont need to be used if you are using graph to link your states
+#        Usually dont need to be called manually if you are using graph to link your states.
 #
-#     stateTime(): returns how long current state is active
+#     stateTime(): returns how long current state has been active
 #
 #     update(inDeltaTime): update FSM to update current state. Should be
-#        used in every game tick, but should use it only if you are using
-#        updateMode="Manual".
+#        called in every game tick, but only if you are using updateMode="Manual".
 #
 #    init(): use only if initManually = true. You will be able to pass additional arguments
 #        to your states and transitions
